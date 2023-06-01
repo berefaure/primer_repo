@@ -1,0 +1,37 @@
+
+@import "../utilities/variables";
+
+
+.navbar {
+
+    
+
+	a {
+		color: $color-primary;
+	}
+	.collapse.navbar-collapse {
+		flex-grow: inherit;
+	}
+	.navbar-toggler {
+		border-color: $color-primary;
+		margin: 25px;
+		&:focus {
+			box-shadow: none;
+		}
+	}
+}
+.navbar-brand {
+	img {
+		width: 100px;
+		margin-left: 50px;
+	}
+}
+.nav-link {
+	&:focus {
+		color: $black;
+	}
+	&:hover {
+		color: $black;
+	}
+}
+
