@@ -1,0 +1,69 @@
+// index
+.fondo-intro {
+    background-image: url(/img/fondo_body.png);
+    width: 100%;
+    height: 360px;
+    display: flex;
+}
+
+.textos-intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+}
+
+.container-boton {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.boton {
+    background-color: $color-secondary;
+    color: $color_primary;
+    border-color: $color-secondary;
+    margin: 20px;
+
+    &:hover {
+        background: $color-primary;
+    }
+}
+
+.titulo-carousel {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.carousel-padre {
+    justify-content: center;
+
+    img {
+        height: 550px;
+        padding: 5px;
+        margin: 2px;
+    }
+}
+
+@media (max-width: 900px) {
+    .carousel-padre {
+        img {
+            height: 500px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .carousel-padre {
+        img {
+            height: 150px;
+        }
+    }
+}
+
+
+//about us
+

@@ -3,7 +3,6 @@
 
 .navbar {
 
-    
 
 	a {
 		color: $color-primary;
@@ -15,7 +14,7 @@
 		border-color: $color-primary;
 		margin: 25px;
 		&:focus {
-			box-shadow: none;
+			box-shadow: $color-secondary;
 		}
 	}
 }
@@ -27,10 +26,10 @@
 }
 .nav-link {
 	&:focus {
-		color: $black;
+		color: $color-secondary;
 	}
 	&:hover {
-		color: $black;
+		color: $color-secondary;
 	}
 }
 

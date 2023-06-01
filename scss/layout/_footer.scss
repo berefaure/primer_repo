@@ -1,0 +1,53 @@
+.foot {
+    width: 100%;
+    bottom: 0;
+    height: 300px;
+    padding: 25px;
+}
+
+.foot {
+	img {
+		height: 100px;
+		padding: 20px;
+	}
+}
+
+.iconos {
+
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.foot a,
+.foot p {
+
+    text-decoration: none;
+    color: $color-primary;
+}
+
+
+@media (max-width:375px) {
+	.foot {
+		display: flex;
+		justify-content: center;
+		a {
+			text-decoration: none;
+			color: $color-primary;
+			font-size: 10px;
+		}
+		p {
+			text-decoration: none;
+			color: $color-primary;
+			font-size: 10px;
+		}
+	}
+	.iconos {
+		display: flex;
+		flex-wrap: wrap;
+		width: 50%;
+	}
+}
