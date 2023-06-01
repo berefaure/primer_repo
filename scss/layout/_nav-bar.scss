@@ -1,35 +1,46 @@
-
-
-
 .navbar {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 
 
-	a {
+	a.navbar-brand {
+
 		color: $color-primary;
+
+		img {
+			width: 100px;
+			margin-left: 50px;
+		}
 	}
-	.collapse.navbar-collapse {
-		flex-grow: inherit;
-	}
+
 	.navbar-toggler {
 		border-color: $color-primary;
 		margin: 25px;
+
 		&:focus {
 			box-shadow: $color-secondary;
 		}
 	}
+
 }
-.navbar-brand {
-	img {
-		width: 100px;
-		margin-left: 50px;
-	}
+
+.navbar .collapse.navbar-collapse {
+	flex-grow: inherit;
 }
+
 .nav-link {
+
+	color: $color-primary;
+	
 	&:focus {
 		color: $color-secondary;
 	}
+
 	&:hover {
 		color: $color-secondary;
 	}
+
 }
+
 
