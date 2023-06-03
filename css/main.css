@@ -88,40 +88,105 @@
   background: rgb(204, 0, 223);
 }
 
-.backg-abus {
+.nosotros .backg-abus {
   background-color: rgb(240, 209, 243);
 }
-.backg-abus .grid-container {
+.nosotros .backg-abus .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin: 20px;
 }
-
-.texto {
+.nosotros .backg-abus .texto {
   grid-column: 1;
 }
-.texto h1 {
+.nosotros .backg-abus .texto h1 {
   font-size: 30px;
 }
-.texto .h2 {
+.nosotros .backg-abus .texto .h2 {
   font-size: 18px;
 }
-.texto p {
+.nosotros .backg-abus .texto p {
   font-size: 16px;
 }
-.texto :is(.texto h1, h2, p) {
+.nosotros .backg-abus .texto :is(.texto h1, h2, p) {
   margin: 20px;
 }
-
-.image {
+.nosotros .backg-abus .image {
   grid-column: 2;
   align-self: center;
 }
-.image img {
+.nosotros .backg-abus .image img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+}
+
+.portfolio .tiktok {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 900px) {
+  .portfolio .tiktok {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacto .contenedor_contacto {
+  display: flex;
+  background-color: rgb(240, 209, 243);
+}
+.contacto .contenedor_contacto img {
+  width: 60%;
+  opacity: 80%;
+  margin: 25px;
+  border-radius: 5px;
+}
+.contacto .contenedor_contacto .contenedor_form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.contacto .contenedor_contacto h1 {
+  font-size: 20px;
+  margin: 5px;
+}
+.contacto .contenedor_contacto h2 {
+  font-size: 15px;
+  margin: 15px;
+}
+.contacto .form {
+  padding: 10px;
+}
+.contacto .form input[type=text],
+.contacto .form [type=email],
+.contacto .form [id=mensaje] {
+  color: #333;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+  background-color: rgb(241, 176, 247);
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-style: dashed;
+  border-radius: 5px;
+}
+.contacto .form input[type=submit] {
+  height: 50px;
+  width: 150px;
+  border-radius: 3px;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+.contacto .form input[type=submit]:hover {
+  color: black;
+  background: rgb(204, 0, 223);
 }
 
 .foot {
