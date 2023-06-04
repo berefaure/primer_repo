@@ -1,1 +1,14 @@
 //hacer un mixin con el boton.
+
+
+@mixin boton {
+
+    background-color: $color-primary;
+    color: white;
+    margin: 20px;
+    padding: 5px;
+
+    &:hover {
+        background: $color-secondary;
+    }
+}

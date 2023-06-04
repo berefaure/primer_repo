@@ -15,27 +15,23 @@
 
     }
 
-
     @media (max-width: $sm) {
 
         .carousel-padre {
 
-           img {
+            img {
                 margin: 50px;
                 padding: 25%;
                 object-fit: contain;
                 height: 50px;
                 width: 100%;
             }
-            
-
         }
-
-
 
     }
 
     .fondo {
+
         background-image: url(/img/fondo_body.png);
         width: 100%;
         height: 360px;
@@ -50,7 +46,9 @@
         }
     }
 
- h3,h4,p {
+    h3,
+    h4,
+    p {
         text-align: center;
         font-weight: bolder;
     }
@@ -62,10 +60,7 @@
             height: 550px;
             padding: 5px;
             margin: 2px;
-
         }
-
-    
     }
 
     .boton-p {
@@ -75,20 +70,10 @@
         margin: 20px;
 
         .boton {
-            background-color: $color-secondary;
-            color: white;
-            border-color: $color-primary;
-            margin: 20px;
-
-            &:hover {
-                background: $color-primary;
-            }
+            @include boton;
 
         }
     }
-
-
-
 }
 
 
@@ -193,47 +178,37 @@
 
         .boton {
 
-            background-color: $color-primary;
-            color: white;
-            margin: 20px;
-            padding: 5px;
-
-            &:hover {
-                background: $color-secondary;
-            }
+            @include boton;
         }
     }
 
     @media (max-width: $sm) {
 
-        
-.tienda {
 
-    .cont-prod {
+        .tienda {
 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: center;
+            .cont-prod {
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+            }
+
+
+            h1,
+            h2 {
+
+
+                margin: 25px;
+                padding: 5px;
+            }
+
+        }
+
+
     }
-
-     
-    h1,
-    h2 {
-
-       
-        margin: 25px;
-        padding: 5px;
-    }
-
-}
-
-    
-    }
-
-
-
 
 }
 
@@ -249,9 +224,6 @@
         width: 100%;
         padding: 10px;
         margin: 10px;
-
-
-
 
     }
 
@@ -274,7 +246,7 @@
 
 .contacto {
 
-    @media (max-width: 900px) {
+    @media (max-width: $md) {
 
         .contenedor_contacto {
             width: 100%;
@@ -288,7 +260,7 @@
     }
 
 
-    @media (max-width: 375px) {
+    @media (max-width: $sm) {
 
         .contenedor_contacto {
 

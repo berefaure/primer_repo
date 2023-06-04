@@ -1,60 +1,34 @@
-.navbar {
-
+ .navbar {
 
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
+ 	flex-direction: row;
 
+    a {
+        color: $color-primary;
+        
+    }
 
-	a.navbar-brand {
-
-
-		img {
-			width: 100px;
-			margin-left: 50px;
-		}
+	img {
+	width: 100px;
+	margin-left: 50px;
 	}
+	
 
-	.container-fluid {
-
-
-		.navbar-toggler {
-			border-color: $color-primary;
-			margin: 25px;
-
-			&:focus {
-				box-shadow: $color-secondary;
-			}
-		}
-	}
-
-
-}
-
-.collapse.navbar-collapse {
-	flex-grow: inherit;
-}
-
-@media (max-width:375px) {
-
-	.collapse.navbar-collapse {
-		background-color: black;
-	}
-}
-
-.nav-link {
-
-	color: $color-primary;
-
-
+.navbar-toggler {
+	border-color: $color-primary;
+	margin: 25px;
 
 	&:focus {
-		color: $color-secondary;
-	}
+			box-shadow: $color-secondary;
+			}
+ 		}
 
-	&:hover {
-		color: $color-secondary;
-	}
-}
+         .navbar-collapse {
+            flex-grow: inherit;
+        }
+ 	}
 
-.container-fluid {}
+
+
+
+

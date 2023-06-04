@@ -8,37 +8,23 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
 }
-.navbar a.navbar-brand img {
+.navbar a {
+  color: rgb(204, 0, 223);
+}
+.navbar img {
   width: 100px;
   margin-left: 50px;
 }
-.navbar .container-fluid .navbar-toggler {
+.navbar .navbar-toggler {
   border-color: rgb(204, 0, 223);
   margin: 25px;
 }
-.navbar .container-fluid .navbar-toggler:focus {
+.navbar .navbar-toggler:focus {
   box-shadow: black;
 }
-
-.collapse.navbar-collapse {
+.navbar .navbar-collapse {
   flex-grow: inherit;
-}
-
-@media (max-width: 375px) {
-  .collapse.navbar-collapse {
-    background-color: black;
-  }
-}
-.nav-link {
-  color: rgb(204, 0, 223);
-}
-.nav-link:focus {
-  color: black;
-}
-.nav-link:hover {
-  color: black;
 }
 
 .index {
@@ -72,7 +58,9 @@
   height: 360px;
   text-align: center;
 }
-.index h3, .index h4, .index p {
+.index h3,
+.index h4,
+.index p {
   text-align: center;
   font-weight: bolder;
 }
@@ -90,13 +78,13 @@
   margin: 20px;
 }
 .index .boton-p .boton {
-  background-color: black;
+  background-color: rgb(204, 0, 223);
   color: white;
-  border-color: rgb(204, 0, 223);
   margin: 20px;
+  padding: 5px;
 }
 .index .boton-p .boton:hover {
-  background: rgb(204, 0, 223);
+  background: black;
 }
 
 .nosotros .backg-abus {
@@ -221,7 +209,7 @@
     justify-items: center;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 360px) {
   .contacto .contenedor_contacto {
     width: 100%;
   }
