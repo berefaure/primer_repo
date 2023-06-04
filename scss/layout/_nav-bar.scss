@@ -1,4 +1,6 @@
 .navbar {
+
+
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -6,7 +8,6 @@
 
 	a.navbar-brand {
 
-		color: $color-primary;
 
 		img {
 			width: 100px;
@@ -14,25 +15,39 @@
 		}
 	}
 
-	.navbar-toggler {
-		border-color: $color-primary;
-		margin: 25px;
+	.container-fluid {
 
-		&:focus {
-			box-shadow: $color-secondary;
+
+		.navbar-toggler {
+			border-color: $color-primary;
+			margin: 25px;
+
+			&:focus {
+				box-shadow: $color-secondary;
+			}
 		}
 	}
 
+
 }
 
-.navbar .collapse.navbar-collapse {
+.collapse.navbar-collapse {
 	flex-grow: inherit;
+}
+
+@media (max-width:375px) {
+
+	.collapse.navbar-collapse {
+		background-color: black;
+	}
 }
 
 .nav-link {
 
 	color: $color-primary;
-	
+
+
+
 	&:focus {
 		color: $color-secondary;
 	}
@@ -40,7 +55,6 @@
 	&:hover {
 		color: $color-secondary;
 	}
-
 }
 
-
+.container-fluid {}

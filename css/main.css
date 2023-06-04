@@ -10,25 +10,27 @@
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.navbar a.navbar-brand {
-  color: rgb(204, 0, 223);
-}
 .navbar a.navbar-brand img {
   width: 100px;
   margin-left: 50px;
 }
-.navbar .navbar-toggler {
+.navbar .container-fluid .navbar-toggler {
   border-color: rgb(204, 0, 223);
   margin: 25px;
 }
-.navbar .navbar-toggler:focus {
+.navbar .container-fluid .navbar-toggler:focus {
   box-shadow: black;
 }
 
-.navbar .collapse.navbar-collapse {
+.collapse.navbar-collapse {
   flex-grow: inherit;
 }
 
+@media (max-width: 375px) {
+  .collapse.navbar-collapse {
+    background-color: black;
+  }
+}
 .nav-link {
   color: rgb(204, 0, 223);
 }
@@ -42,6 +44,21 @@
 .index {
   padding: 2px;
   margin: 2px;
+}
+@media (max-width: 900px) {
+  .index .carousel-padre img {
+    height: 500px;
+  }
+}
+@media (max-width: 475px) {
+  .index .carousel-padre {
+    margin: img;
+    margin-margin: 50px;
+    margin-padding: 25%;
+    margin-object-fit: contain;
+    margin-height: 50px;
+    margin-width: 100%;
+  }
 }
 .index .fondo {
   background-image: url(/img/fondo_body.png);
@@ -97,6 +114,13 @@
   gap: 20px;
   margin: 20px;
 }
+@media (max-width: 375px) {
+  .nosotros .backg-abus .grid-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
 .nosotros .backg-abus .texto {
   grid-column: 1;
 }
@@ -122,17 +146,92 @@
   border-radius: 5px;
 }
 
-.portfolio .tiktok {
+.tienda {
+  background-color: rgb(240, 209, 243);
+  padding: 20px;
+  margin: 10px;
+}
+.tienda h1,
+.tienda h2 {
+  text-align: center;
+  margin: 25px;
+  padding: 5px;
+}
+.tienda .cont-prod {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
 }
-@media (max-width: 900px) {
-  .portfolio .tiktok {
+.tienda .producto {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.457);
+  border-radius: 5px;
+  text-align: center;
+}
+.tienda .producto img {
+  width: 150px;
+  height: 150px;
+}
+.tienda .producto .boton {
+  background-color: rgb(204, 0, 223);
+  color: white;
+  margin: 20px;
+  padding: 5px;
+}
+.tienda .producto .boton:hover {
+  background: black;
+}
+@media (max-width: 475px) {
+  .tienda .tienda .cont-prod {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .tienda .tienda h1,
+  .tienda .tienda h2 {
+    margin: 25px;
+    padding: 5px;
   }
 }
 
+.portfolio .tiktok {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+@media (max-width: 475px) {
+  .portfolio .tiktok {
+    width: 100%;
+    flex-flow: column;
+    padding: 3px;
+    margin: 3px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contacto .contenedor_contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+}
+@media (max-width: 375px) {
+  .contacto .contenedor_contacto {
+    width: 100%;
+  }
+}
 .contacto .contenedor_contacto {
   display: flex;
   background-color: rgb(240, 209, 243);
