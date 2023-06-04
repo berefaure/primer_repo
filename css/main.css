@@ -50,14 +50,13 @@
     height: 500px;
   }
 }
-@media (max-width: 475px) {
-  .index .carousel-padre {
-    margin: img;
-    margin-margin: 50px;
-    margin-padding: 25%;
-    margin-object-fit: contain;
-    margin-height: 50px;
-    margin-width: 100%;
+@media (max-width: 360px) {
+  .index .carousel-padre img {
+    margin: 50px;
+    padding: 25%;
+    object-fit: contain;
+    height: 50px;
+    width: 100%;
   }
 }
 .index .fondo {
@@ -73,8 +72,9 @@
   height: 360px;
   text-align: center;
 }
-.index h3 {
+.index h3, .index h4, .index p {
   text-align: center;
+  font-weight: bolder;
 }
 .index .carousel-padre {
   justify-content: center;
@@ -83,12 +83,6 @@
   height: 550px;
   padding: 5px;
   margin: 2px;
-}
-.index .carousel-padre h4 {
-  text-align: center;
-}
-.index .carousel-padre p {
-  text-align: center;
 }
 .index .boton-p {
   display: flex;
@@ -187,7 +181,7 @@
 .tienda .producto .boton:hover {
   background: black;
 }
-@media (max-width: 475px) {
+@media (max-width: 360px) {
   .tienda .tienda .cont-prod {
     display: flex;
     flex-direction: row;
@@ -209,7 +203,7 @@
   padding: 10px;
   margin: 10px;
 }
-@media (max-width: 475px) {
+@media (max-width: 360px) {
   .portfolio .tiktok {
     width: 100%;
     flex-flow: column;
