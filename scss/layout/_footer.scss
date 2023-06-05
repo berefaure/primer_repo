@@ -5,7 +5,8 @@
 	padding: 25px;
 
 	img {
-		height: 100px;
+		height: 80px;
+		width: 80px;
 		padding: 20px;
 	}
 
@@ -47,6 +48,5 @@
 	.iconos {
 		display: flex;
 		flex-wrap: wrap;
-		width: 50%;
 	}
 }

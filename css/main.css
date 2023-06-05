@@ -12,6 +12,10 @@
 .navbar a {
   color: rgb(204, 0, 223);
 }
+.navbar ul {
+  text-decoration: none;
+  align-items: center;
+}
 .navbar img {
   width: 100px;
   margin-left: 50px;
@@ -30,20 +34,6 @@
 .index {
   padding: 2px;
   margin: 2px;
-}
-@media (max-width: 900px) {
-  .index .carousel-padre img {
-    height: 500px;
-  }
-}
-@media (max-width: 360px) {
-  .index .carousel-padre img {
-    margin: 50px;
-    padding: 25%;
-    object-fit: contain;
-    height: 50px;
-    width: 100%;
-  }
 }
 .index .fondo {
   background-image: url(/img/fondo_body.png);
@@ -71,6 +61,18 @@
   height: 550px;
   padding: 5px;
   margin: 2px;
+}
+@media (max-width: 900px) {
+  .index .carousel-padre img {
+    height: 400px;
+  }
+}
+@media (max-width: 360px) {
+  .index .carousel-padre img {
+    height: 350px;
+    object-fit: contain;
+    width: 100%;
+  }
 }
 .index .boton-p {
   display: flex;
@@ -184,20 +186,16 @@
   }
 }
 
+.portfolio {
+  margin: 20px;
+}
 .portfolio .tiktok {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
 }
-@media (max-width: 360px) {
-  .portfolio .tiktok {
-    width: 100%;
-    flex-flow: column;
-    padding: 3px;
-    margin: 3px;
-  }
+.portfolio article {
+  align-content: center;
 }
 
 @media (max-width: 900px) {
@@ -277,7 +275,8 @@
   padding: 25px;
 }
 .foot img {
-  height: 100px;
+  height: 80px;
+  width: 80px;
   padding: 20px;
 }
 .foot .iconos {
@@ -307,7 +306,6 @@
   .iconos {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
   }
 }
 

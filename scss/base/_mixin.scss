@@ -12,3 +12,25 @@
         background: $color-secondary;
     }
 }
+
+
+@mixin desktop ($media : $lg) {
+    @media screen and (min-width: $media) {
+        @content; 
+        width: 20%;
+    }
+}
+
+@mixin tablet ($media : $md) {
+    @media screen and (min-width: $media) {
+        @content;
+        width: 30%;
+    }
+}
+
+@mixin mobile ($media : $sm) {
+    @media screen and (min-width: $media) {
+        @content;
+        width: 60%;
+    }
+}
