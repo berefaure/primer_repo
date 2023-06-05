@@ -186,16 +186,39 @@
   }
 }
 
-.portfolio {
-  margin: 20px;
+.portfolio .ig {
+  width: 100%;
+}
+@media (max-width: 840px) {
+  .portfolio .ig {
+    height: 950px;
+    margin: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .portfolio .ig {
+    height: 400px;
+    margin: 5px;
+  }
 }
 .portfolio .tiktok {
   display: flex;
   flex-direction: row;
+  padding: 25px;
+  justify-content: center;
+}
+@media (max-width: 470px) {
+  .portfolio .tiktok {
+    flex-direction: column;
+  }
+}
+.portfolio .tiktok article {
+  margin: 5px;
   padding: 5px;
 }
-.portfolio article {
-  align-content: center;
+.portfolio .tiktok article a {
+  width: 500px;
+  height: 250px;
 }
 
 @media (max-width: 900px) {
