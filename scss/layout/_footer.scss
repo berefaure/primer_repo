@@ -12,19 +12,16 @@
 
 
 	.iconos {
-
 		padding: 50px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
 		text-align: center;
-
 	}
 
 
 	a,
 	p {
-
 		text-decoration: none;
 		color: $color-primary;
 	}

@@ -5,9 +5,7 @@
     padding: 2px;
     margin: 2px;
 
-
     .fondo {
-
         background-image: url(/img/fondo_body.png);
         width: 100%;
         height: 360px;
@@ -38,27 +36,14 @@
             margin: 2px;
 
             @media (max-width: $md) {
-
-
-
                 height: 400px;
-
-
-
             }
 
             @media (max-width: $sm) {
-
-
                 height: 350px;
-
-
                 object-fit: contain;
                 width: 100%;
-
-
             }
-
         }
     }
 
@@ -74,6 +59,7 @@
         }
     }
 }
+
 
 
 //about us
@@ -128,13 +114,11 @@
             }
         }
 
-
     }
 
 }
 
 .tienda {
-
 
     background-color: $color-light;
     padding: 20px;
@@ -155,7 +139,6 @@
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-between;
-
     }
 
     .producto {
@@ -172,20 +155,16 @@
         img {
             width: 150px;
             height: 150px;
-
         }
 
         .boton {
-
             @include boton;
         }
     }
 
     @media (max-width: $sm) {
 
-
         .tienda {
-
             .cont-prod {
 
                 display: flex;
@@ -195,18 +174,12 @@
                 justify-content: center;
             }
 
-
             h1,
             h2 {
-
-
                 margin: 25px;
                 padding: 5px;
             }
-
         }
-
-
     }
 
 }
@@ -215,19 +188,16 @@
 //portfolio
 .portfolio {
     margin: 20px;
-   
 
     .tiktok {
         display: flex;
         flex-direction: row;
         padding: 5px;
     }
-    article {
 
+    article {
         align-content: center;
     }
-   
-
 }
 
 
@@ -245,27 +215,20 @@
             justify-items: center;
 
         }
-
     }
-
 
     @media (max-width: $sm) {
 
         .contenedor_contacto {
-
             width: 100%;
-
         }
-
     }
-
 
     .contenedor_contacto {
         display: flex;
         background-color: rgb(240, 209, 243);
 
         img {
-
             width: 60%;
             opacity: 80%;
             margin: 25px;
@@ -276,25 +239,18 @@
             display: flex;
             flex-direction: column;
             padding: 20px;
-
             align-items: center;
             justify-content: center;
-
-
         }
 
         h1 {
-
             font-size: 20px;
             margin: 5px;
-
         }
 
         h2 {
-
             font-size: 15px;
             margin: 15px;
-
         }
     }
 
@@ -320,31 +276,18 @@
         }
 
         input[type="submit"] {
-
             height: 50px;
             width: 150px;
             border-radius: 3px;
             font-weight: 600;
             background-color: black;
             color: white;
-
             font-size: 18px;
-
         }
 
         input[type="submit"]:hover {
-
-
             color: black;
             background: rgb(204, 0, 223);
-            ;
-
-
         }
-
     }
-
-
-
-
 }

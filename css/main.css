@@ -67,7 +67,7 @@
     height: 400px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 470px) {
   .index .carousel-padre img {
     height: 350px;
     object-fit: contain;
@@ -171,7 +171,7 @@
 .tienda .producto .boton:hover {
   background: black;
 }
-@media (max-width: 360px) {
+@media (max-width: 470px) {
   .tienda .tienda .cont-prod {
     display: flex;
     flex-direction: row;
@@ -207,7 +207,7 @@
     justify-items: center;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 470px) {
   .contacto .contenedor_contacto {
     width: 100%;
   }

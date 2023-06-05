@@ -1,41 +1,34 @@
  .navbar {
 
-	display: flex;
+ 	display: flex;
  	flex-direction: row;
 
-    a {
-        color: $color-primary;
-        
-    }
+ 	a {
+ 		color: $color-primary;
+ 	}
 
-	ul {
+ 	ul {
 
-		text-decoration: none;
-		align-items: center;
+ 		text-decoration: none;
+ 		align-items: center;
+ 	}
 
-	}
-
-	img {
-	width: 100px;
-	margin-left: 50px;
-	}
-	
-
-.navbar-toggler {
-	border-color: $color-primary;
-	margin: 25px;
-
-	&:focus {
-			box-shadow: $color-secondary;
-			}
- 		}
-
-         .navbar-collapse {
-            flex-grow: inherit;
-        }
+ 	img {
+ 		width: 100px;
+ 		margin-left: 50px;
  	}
 
 
+ 	.navbar-toggler {
+ 		border-color: $color-primary;
+ 		margin: 25px;
 
+ 		&:focus {
+ 			box-shadow: $color-secondary;
+ 		}
+ 	}
 
-
+ 	.navbar-collapse {
+ 		flex-grow: inherit;
+ 	}
+ }
