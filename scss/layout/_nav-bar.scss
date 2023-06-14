@@ -15,7 +15,30 @@
 
  	img {
  		width: 100px;
- 		margin-left: 50px;
+ 		margin-left: 1vh;
+
+		@media screen and (min-width: 340px) { 
+
+			margin-left: 2vh;
+			
+		}
+
+		@media screen and (min-width: 768px) { 
+
+			margin-left: 4vh;
+			
+		}
+
+		@media screen and (min-width: 1024) { 
+
+			margin-left: 8vh;
+			
+		}
+
+		@media screen and (min-width: 1280px) { 
+			margin-left: 2vh;
+
+		}
  	}
 
 
