@@ -52,14 +52,16 @@
 }
 
 .index {
-  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
   padding: 2px;
   margin: 2px;
+  z-index: 0;
 }
 .index .fondo {
   background-image: url(/img/fondo_body.png);
   width: 100%;
   height: 360px;
+  z-index: 1;
 }
 .index .fondo .textos {
   width: 100%;
@@ -94,7 +96,7 @@
 }
 @media screen and (min-width: 1280px) {
   .index h1 {
-    font-size: 120px;
+    font-size: 90px;
   }
 }
 .index h2 {
@@ -127,11 +129,11 @@
 }
 .index p {
   font-weight: bold;
-  margin: 2px;
 }
 @media screen and (min-width: 340px) {
   .index p {
     font-size: 15px;
+    margin: 0;
   }
 }
 @media screen and (min-width: 480px) {
@@ -146,6 +148,7 @@
 }
 .index h3 {
   text-align: center;
+  font-size: 45px;
 }
 @media screen and (min-width: 340px) {
   .index h3 {
@@ -166,11 +169,7 @@
 @media screen and (min-width: 1024) {
   .index h3 {
     font-size: 55px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .index h3 {
-    font-size: 60px;
+    background-color: black;
   }
 }
 .index .carousel-padre {
@@ -202,11 +201,9 @@
     margin-bottom: 50px;
   }
 }
-@media screen and (min-width: 1280px) {
-  .index .carousel-padre img {
-    height: 650px;
-    margin-bottom: 50px;
-  }
+.index .carousel-padre .text-car {
+  padding: 5px;
+  margin-bottom: 20px;
 }
 .index .boton-p {
   display: flex;
@@ -224,7 +221,7 @@
 }
 
 .nosotros .backg-abus {
-  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
 }
 .nosotros .backg-abus .grid-container {
   display: grid;
@@ -232,36 +229,55 @@
   gap: 20px;
   margin: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .nosotros .backg-abus .grid-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 100px;
+  }
+  .nosotros .backg-abus .grid-container img {
+    margin-bottom: 25px;
+    border-radius: 30px;
+    width: 80%;
+  }
+}
 .nosotros .backg-abus .texto {
   grid-column: 1;
 }
 .nosotros .backg-abus .texto h1 {
   font-weight: bold;
-  text-align: left;
+  text-align: center;
 }
 @media screen and (min-width: 340px) {
   .nosotros .backg-abus .texto h1 {
     font-size: 25px;
+    margin-top: 25px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 480px) {
   .nosotros .backg-abus .texto h1 {
     font-size: 30px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 768px) {
   .nosotros .backg-abus .texto h1 {
     font-size: 40px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1024) {
   .nosotros .backg-abus .texto h1 {
-    font-size: 80px;
+    font-size: 50px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1280px) {
   .nosotros .backg-abus .texto h1 {
     font-size: 45px;
+    text-align: left;
   }
 }
 .nosotros .backg-abus .texto h2 {
@@ -315,16 +331,13 @@
     font-size: 15px;
   }
 }
-.nosotros .backg-abus .texto :is(.texto h1, h2, p) {
-  margin: 20px;
-}
 .nosotros .backg-abus .image {
   grid-column: 2;
   align-self: center;
 }
 .nosotros .backg-abus .image img {
-  max-width: 100%;
-  height: auto;
+  height: 350px;
+  width: 100%;
   border-radius: 5px;
 }
 
@@ -428,7 +441,6 @@
 .foot {
   width: 100%;
   bottom: 0;
-  height: 300px;
   padding: 25px;
 }
 .foot img {
@@ -437,32 +449,18 @@
   padding: 20px;
 }
 .foot .iconos {
-  padding: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
 }
-.foot a,
-.foot p {
+.foot :is(a, p) {
   text-decoration: none;
   color: rgb(204, 0, 223);
 }
-
-@media (max-width: 375px) {
-  .foot {
-    display: flex;
-    justify-content: center;
-  }
-  .foot a,
-  .foot p {
-    text-decoration: none;
-    color: rgb(204, 0, 223);
+@media (max-width: 340px) {
+  .foot :is(a, p) {
     font-size: 10px;
-  }
-  .iconos {
-    display: flex;
-    flex-wrap: wrap;
   }
 }
 

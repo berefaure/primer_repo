@@ -1,7 +1,6 @@
 .foot {
 	width: 100%;
 	bottom: 0;
-	height: 300px;
 	padding: 25px;
 
 	img {
@@ -12,7 +11,7 @@
 
 
 	.iconos {
-		padding: 50px;
+		
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
@@ -20,30 +19,22 @@
 	}
 
 
-	a,
-	p {
+	:is(a, p){
+
 		text-decoration: none;
 		color: $color-primary;
-	}
-}
-
-
-@media (max-width:375px) {
-	.foot {
-		display: flex;
-		justify-content: center;
-
-		a,
-		p {
-			text-decoration: none;
-			color: $color-primary;
+		@media (max-width:340px) {	
 			font-size: 10px;
 		}
-
 	}
 
-	.iconos {
-		display: flex;
-		flex-wrap: wrap;
-	}
-}
+
+}	
+
+	
+	
+
+
+
+
+	
