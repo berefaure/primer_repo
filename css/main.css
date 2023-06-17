@@ -337,14 +337,12 @@
 
 .tienda {
   background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
+  max-width: 1000px;
+  margin: auto;
 }
 .tienda h1,
 .tienda h2 {
+  text-align: center;
   margin: 5px 0px 15px 0px;
   padding: 5px;
 }
@@ -352,35 +350,32 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 80%;
-  justify-content: space-between;
   margin: 20px 20px 60px 20px;
 }
-.tienda .producto {
-  display: inline-block;
-  vertical-align: top;
+.tienda .cont-prod .producto {
   width: 200px;
+  height: 350px;
   margin: 10px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.457);
   border-radius: 5px;
   text-align: center;
 }
-.tienda .producto img {
+.tienda .cont-prod .producto img {
   width: 150px;
   height: 150px;
 }
-.tienda .producto .boton {
+.tienda .cont-prod .producto .boton {
   background-color: rgb(204, 0, 223);
   color: white;
   margin: 20px;
   padding: 5px;
 }
-.tienda .producto .boton:hover {
+.tienda .cont-prod .producto .boton:hover {
   background: black;
 }
 
-.portfolio .tiktok {
+git .portfolio .tiktok {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -388,7 +383,7 @@
   margin: 10px;
 }
 @media (max-width: 480px) {
-  .portfolio .tiktok {
+  git .portfolio .tiktok {
     width: 100%;
     flex-flow: column;
     padding: 3px;
