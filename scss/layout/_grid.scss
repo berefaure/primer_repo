@@ -201,6 +201,8 @@
         background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
         height: auto;
 
+
+
         .grid-container {
 
             display: grid;
@@ -234,7 +236,7 @@
                 margin-left: 20px;
 
                 @media screen and (min-width: 340px) {
-                    font-size: 25px;
+                    font-size: 20px;
                     margin-top: 25px;
 
                 }
@@ -245,6 +247,7 @@
 
                 @media screen and (min-width: 768px) {
                     font-size: 40px;
+                    text-align: center;
                 }
 
                 @media screen and (min-width: 1024) {
@@ -261,6 +264,7 @@
 
                 @media screen and (min-width: 340px) {
                     font-size: 15px;
+                    text-align: center;
                 }
 
                 @media screen and (min-width: 480px) {
@@ -268,7 +272,9 @@
                 }
 
                 @media screen and (min-width: 768px) {
-                    font-size: 25px;
+                    font-size: 18px;
+                    text-align: center;
+
                 }
 
                 @media screen and (min-width: 1024) {
@@ -285,6 +291,11 @@
                 text-align: left;
                 margin: 20px;
                 font-size: 15px;
+
+                @media screen and (min-width: 768px) {
+                    text-align: center;
+
+                }
             }
         }
 
@@ -297,6 +308,17 @@
                 width: 90%;
                 border-radius: 5px;
 
+                @media screen and (min-width: 340px) {
+                    height: auto;
+                    margin: 0px 0px 25px 25px;
+
+                }
+
+                @media screen and (min-width: 768px) {
+                    margin-left: 60px;
+
+                }
+
 
             }
         }
@@ -304,16 +326,21 @@
 
 }
 
+
+
 .tienda {
-    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
-    padding: 20px;
+    background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
 
 
     h1,
     h2 {
 
-        text-align: center;
-        margin: 25px;
+        margin: 5px 0px 15px 0px;
         padding: 5px;
     }
 
@@ -322,8 +349,9 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
+        width: 80%;
         justify-content: space-between;
+        margin: 20px 20px 60px 20px;
     }
 
     .producto {
@@ -352,78 +380,177 @@
 
 //portfolio
 
-.portfolio {}
+.portfolio {
 
+    .tiktok {
+
+        display: flex;
+        flex-direction: row;
+
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+
+    }
+
+    @media (max-width: $sm) {
+
+
+        .tiktok {
+
+            width: 100%;
+            flex-flow: column;
+            padding: 3px;
+            margin: 3px;
+        }
+    }
+
+}
 
 //contacto
+
+
 
 .contacto {
 
 
-    .contenedor_contacto {
+    background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    display: flex;
+    justify-content: center;
+
+
+    img {
+
+        height: 400px;
+        opacity: 70%;
+        margin: 20px;
+        justify-self: center;
+        border-radius: 5px;
+
+        @media screen and (min-width: 340px) {
+            
+
+            width: 90%;
+            height: 300px;
+            
+
+        }
+
+    }
+
+    .contenedor_form {
+
+        background: linear-gradient(60deg, #fccb90 0%, #d57eeb 100%);
+        box-shadow: #0d0d0d;
         display: flex;
-        background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+
+
+        .form {
+
+
+
+            input[type="text"],
+            [type="email"],
+            [id="mensaje"] {
+                color: #333;
+                font-size: 15px;
+                font-family: Barlow, sans-serif;
+                font-weight: bolder;
+                background-color: rgb(241, 176, 247);
+                border: 1px solid #ccc;
+                padding: 5px;
+                margin-bottom: 10px;
+                border-style: dashed;
+                border-radius: 5px;
+            }
+
+            input[type="submit"] {
+                height: 50px;
+                width: 150px;
+                border-radius: 15px;
+                font-weight: 600;
+                background-color: black;
+                color: white;
+                font-size: 15px;
+            }
+
+            input[type="submit"]:hover {
+                color: black;
+                background: rgb(204, 0, 223);
+            }
+        }
+
+    }
+
+
+    h1 {
+        font-size: 20px;
+        margin: 5px;
+        font-size: bolder;
+    }
+
+    h2 {
+        font-size: 15px;
+        margin: 15px;
+    }
+
+    :is(h1, h2) {
+
+        text-align: center;
+    }
+
+    @media screen and (min-width: 340px) {
+
+        display: flex;
+        flex-direction: column;
 
         img {
-            width: 60%;
-            opacity: 80%;
-            margin: 25px;
-            border-radius: 5px;
+
+            width: 90%;
+            height: 300px;
+        }
+
+    }
+
+    @media screen and (min-width: 768px) {
+
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: 300px;
+            align-content: center;
         }
 
         .contenedor_form {
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-            align-items: center;
-            justify-content: center;
+            width: 60%;
         }
 
-        h1 {
-            font-size: 20px;
-            margin: 5px;
-        }
-
-        h2 {
-            font-size: 15px;
-            margin: 15px;
-        }
     }
 
 
-    .form {
+    @media screen and (min-width: 1024px) {
 
-        padding: 10px;
+        align-items: center;
+        justify-content: center;
 
-        input[type="text"],
-        [type="email"],
-        [id="mensaje"] {
-            color: #333;
-            font-size: 16px;
-            font-family: Arial, sans-serif;
-            font-weight: bolder;
-            background-color: rgb(241, 176, 247);
-            ;
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 20px;
-            border-style: dashed;
-            border-radius: 5px;
+        img {
+            width: 100%;
+            height: 500px;
+            align-content: center;
         }
 
-        input[type="submit"] {
-            height: 50px;
-            width: 150px;
-            border-radius: 3px;
-            font-weight: 600;
-            background-color: black;
-            color: white;
-            font-size: 18px;
+        .contenedor_form {
+            width: 40%;
         }
 
-        input[type="submit"]:hover {
-            color: black;
-            background: rgb(204, 0, 223);
-        }
     }
+
+
 }
