@@ -399,19 +399,39 @@
 .contacto {
   background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
+  width: 100%;
 }
-.contacto img {
+@media screen and (max-width: 768px) {
+  .contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contacto .img_contacto img {
   height: 400px;
   opacity: 70%;
   margin: 20px;
   justify-self: center;
   border-radius: 5px;
 }
-@media screen and (min-width: 340px) {
-  .contacto img {
-    width: 90%;
-    height: 300px;
+@media screen and (max-width: 768px) {
+  .contacto .img_contacto img {
+    width: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contacto .img_contacto img {
+    width: 450px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .contacto .img_contacto img {
+    width: 300px;
+    height: 350px;
   }
 }
 .contacto .contenedor_form {
@@ -423,6 +443,23 @@
   padding: 20px;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .contacto .contenedor_form {
+    width: auto;
+  }
+}
+.contacto .contenedor_form h1 {
+  font-size: 20px;
+  margin: 5px;
+  font-size: bolder;
+}
+.contacto .contenedor_form h2 {
+  font-size: 15px;
+  margin: 15px;
+}
+.contacto .contenedor_form :is(h1, h2) {
+  text-align: center;
 }
 .contacto .contenedor_form .form input[type=text],
 .contacto .contenedor_form .form [type=email],
@@ -450,56 +487,6 @@
 .contacto .contenedor_form .form input[type=submit]:hover {
   color: black;
   background: rgb(204, 0, 223);
-}
-.contacto h1 {
-  font-size: 20px;
-  margin: 5px;
-  font-size: bolder;
-}
-.contacto h2 {
-  font-size: 15px;
-  margin: 15px;
-}
-.contacto :is(h1, h2) {
-  text-align: center;
-}
-@media screen and (min-width: 340px) {
-  .contacto {
-    display: flex;
-    flex-direction: column;
-  }
-  .contacto img {
-    width: 90%;
-    height: 300px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .contacto {
-    align-items: center;
-    justify-content: center;
-  }
-  .contacto img {
-    width: 100%;
-    height: 300px;
-    align-content: center;
-  }
-  .contacto .contenedor_form {
-    width: 60%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .contacto {
-    align-items: center;
-    justify-content: center;
-  }
-  .contacto img {
-    width: 100%;
-    height: 500px;
-    align-content: center;
-  }
-  .contacto .contenedor_form {
-    width: 40%;
-  }
 }
 
 .foot {

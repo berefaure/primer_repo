@@ -412,29 +412,49 @@
 
 
 .contacto {
-
-
     background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_contacto {
+
+        img {
+
+            height: 400px;
+            opacity: 70%;
+            margin: 20px;
+            justify-self: center;
+            border-radius: 5px;
+
+            @media screen and (max-width: 768px) {
+                width: auto;
 
 
-    img {
+            }
 
-        height: 400px;
-        opacity: 70%;
-        margin: 20px;
-        justify-self: center;
-        border-radius: 5px;
+            @media screen and (max-width: 480px) {
+                width: 450px;
+                height: 350px;
+            }
 
-        @media screen and (min-width: 340px) {
-            
+            @media screen and (max-width: 340px) {
+                width: 300px;
+                height: 350px;
+            }
 
-            width: 90%;
-            height: 300px;
-            
+
+
 
         }
+
 
     }
 
@@ -449,10 +469,26 @@
         align-items: center;
         justify-content: center;
 
+        @media screen and (max-width: 768px) {
+            width: auto;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin: 5px;
+            font-size: bolder;
+        }
+
+        h2 {
+            font-size: 15px;
+            margin: 15px;
+        }
+
+        :is(h1, h2) {
+            text-align: center;
+        }
 
         .form {
-
-
 
             input[type="text"],
             [type="email"],
@@ -483,71 +519,6 @@
                 color: black;
                 background: rgb(204, 0, 223);
             }
-        }
-
-    }
-
-
-    h1 {
-        font-size: 20px;
-        margin: 5px;
-        font-size: bolder;
-    }
-
-    h2 {
-        font-size: 15px;
-        margin: 15px;
-    }
-
-    :is(h1, h2) {
-
-        text-align: center;
-    }
-
-    @media screen and (min-width: 340px) {
-
-        display: flex;
-        flex-direction: column;
-
-        img {
-
-            width: 90%;
-            height: 300px;
-        }
-
-    }
-
-    @media screen and (min-width: 768px) {
-
-        align-items: center;
-        justify-content: center;
-
-        img {
-            width: 100%;
-            height: 300px;
-            align-content: center;
-        }
-
-        .contenedor_form {
-            width: 60%;
-        }
-
-    }
-
-
-    @media screen and (min-width: 1024px) {
-
-        align-items: center;
-        justify-content: center;
-
-        img {
-            width: 100%;
-            height: 500px;
-            align-content: center;
-        }
-
-        .contenedor_form {
-            width: 40%;
         }
 
     }
