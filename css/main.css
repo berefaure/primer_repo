@@ -335,55 +335,75 @@
   }
 }
 
-.tienda {
+.body-tienda {
   background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+.body-tienda .tienda {
   max-width: 1000px;
   margin: auto;
+  justify-content: center;
 }
-.tienda h1,
-.tienda h2 {
+.body-tienda .tienda h1,
+.body-tienda .tienda h2 {
   text-align: center;
-  margin: 5px 0px 15px 0px;
+  margin: 15px 0px 15px 0px;
   padding: 5px;
 }
-.tienda .cont-prod {
+.body-tienda .tienda .cont-prod {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 20px 20px 60px 20px;
 }
-.tienda .cont-prod .producto {
+.body-tienda .tienda .cont-prod .producto {
   width: 200px;
-  height: 350px;
+  height: 450px;
+  gap: 20px;
   margin: 10px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.457);
   border-radius: 5px;
   text-align: center;
+  align-items: center;
 }
-.tienda .cont-prod .producto img {
-  width: 150px;
-  height: 150px;
+.body-tienda .tienda .cont-prod .producto img {
+  width: auto;
+  height: 250px;
 }
-.tienda .cont-prod .producto .boton {
+.body-tienda .tienda .cont-prod .producto img .card-img-top {
+  width: 100%;
+  object-fit: cover;
+}
+.body-tienda .tienda .cont-prod .producto h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+.body-tienda .tienda .cont-prod .producto .p-tienda {
+  text-align: center;
+}
+.body-tienda .tienda .cont-prod .producto .boton {
+  height: 60px;
+  width: 100px;
+  padding: 2px;
+  margin-top: 100px;
   background-color: rgb(204, 0, 223);
   color: white;
   margin: 20px;
   padding: 5px;
 }
-.tienda .cont-prod .producto .boton:hover {
+.body-tienda .tienda .cont-prod .producto .boton:hover {
   background: black;
 }
 
-git .portfolio .tiktok {
+.portfolio .tiktok {
   display: flex;
   flex-direction: row;
   width: 100%;
   padding: 10px;
   margin: 10px;
 }
-@media (max-width: 480px) {
-  git .portfolio .tiktok {
+@media (max-width: 340px) {
+  .portfolio .tiktok {
     width: 100%;
     flex-flow: column;
     padding: 3px;
