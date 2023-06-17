@@ -89,7 +89,7 @@
     font-size: 80px;
   }
 }
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
   .index h1 {
     font-size: 60px;
   }
@@ -117,7 +117,7 @@
     font-size: 40px;
   }
 }
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
   .index h2 {
     font-size: 120px;
   }
@@ -166,10 +166,9 @@
     font-size: 40px;
   }
 }
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
   .index h3 {
     font-size: 55px;
-    background-color: black;
   }
 }
 .index .carousel-padre {
@@ -195,7 +194,7 @@
     margin-bottom: 50px;
   }
 }
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
   .index .carousel-padre img {
     height: 650px;
     margin-bottom: 50px;
@@ -268,7 +267,7 @@
     text-align: center;
   }
 }
-@media screen and (min-width: 1280) {
+@media screen and (min-width: 1280px) {
   .nosotros .backg-abus .texto h1 {
     font-size: 50px;
   }
@@ -293,7 +292,7 @@
     text-align: center;
   }
 }
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
   .nosotros .backg-abus .texto h2 {
     font-size: 40px;
   }
@@ -354,6 +353,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin: 20px 20px 60px 20px;
+  justify-content: center;
 }
 .body-tienda .tienda .cont-prod .producto {
   width: 200px;
@@ -395,12 +395,25 @@
   background: black;
 }
 
+.portfolio {
+  background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+@media screen and (width: 340px) {
+  .portfolio .ig {
+    margin: 20px;
+  }
+}
+@media screen and (width: 768px) {
+  .portfolio .ig {
+    margin: 40px;
+  }
+}
 .portfolio .tiktok {
   display: flex;
   flex-direction: row;
   width: 100%;
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
   justify-content: space-around;
 }
 @media (max-width: 768px) {
