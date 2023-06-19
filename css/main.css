@@ -1,3 +1,12 @@
+.top {
+  display: flex;
+  justify-content: center;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  color: #fff;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -372,8 +381,7 @@
 }
 .body-tienda .tienda .cont-prod .producto img .card-img-top {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .body-tienda .tienda .cont-prod .producto h3 {
   font-size: 20px;
@@ -559,4 +567,6 @@
   .foot :is(a, p) {
     font-size: 10px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

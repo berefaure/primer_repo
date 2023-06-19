@@ -4,7 +4,7 @@
     padding: 2px;
     margin: 2px;
     z-index: 0;
-
+    
     .fondo {
         background-image: url(/img/fondo_body.png);
         width: 100%;
@@ -154,7 +154,11 @@
             @include boton;
         }
     }
+
+
 }
+
+
 
 //about us
 
